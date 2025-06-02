@@ -29,7 +29,7 @@ resource "yandex_compute_instance" "vm" {
   hostname           = var.env_name == null ? "${var.instance_name}-${count.index}" : "${var.env_name}-${var.instance_name}-${count.index}"
   zone               = element(var.subnet_zones, count.index)
   service_account_id = var.service_account_id
-  description        = "${var.description} {{terraform managed}}"
+  description        = "${var.description} {{terraform yyy managed}}"
   scheduling_policy {
     preemptible = var.preemptible
   }
