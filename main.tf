@@ -12,6 +12,7 @@ locals {
     "env"=var.env_name
     "project"="undefined"
     "a"="b"
+    "c"="d"
   }
 }
 
