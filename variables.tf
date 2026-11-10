@@ -22,7 +22,7 @@ variable "instance_name" {
 
 variable "platform" {
    type          = string
-   default       = "standard-v1"
+   default       = "standard-v3"
    description   = "Example to validate VM platform."
    validation {
      condition = contains(["standard-v1", "standard-v2", "standard-v3"], var.platform)
@@ -52,7 +52,7 @@ variable "instance_memory" {
 
 variable "instance_core_fraction" {
   type    = number
-  default = 5
+  default = 20
 }
 
 variable "boot_disk_type" {
